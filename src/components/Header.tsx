@@ -25,7 +25,7 @@ export const Header = () => {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Command className="h-6 w-6" />
-            <span className="text-lg font-semibold">CD</span>
+            <span className="text-lg font-semibold">PRANA ATOLE</span>
           </div>
 
           <div className="flex items-center space-x-6">
@@ -68,13 +68,7 @@ export const Header = () => {
                 asChild
                 className="h-9 w-9"
               >
-                <a 
-                  href="https://github.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  <Github className="h-4 w-4" />
-                </a>
+                
               </Button>
             </div>
           </div>

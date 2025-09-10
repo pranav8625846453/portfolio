@@ -5,7 +5,6 @@ import { ExternalLink, Github, Award } from "lucide-react";
 
 interface Project {
   name: string;
-  period: string;
   description: string;
   highlights?: string[];
   technologies: string[];
@@ -13,32 +12,47 @@ interface Project {
     demo?: string;
     github?: string;
   };
-  awards?: string[];
 }
 
 const projects: Project[] = [
   {
-    name: "React Wheel Picker",
-    period: "05.2025—Present",
-    description: "iOS-like wheel picker for React with smooth inertia scrolling and infinite loop support.",
+    name: "E-COMMERCE WEBSITE",
+    description: "Full-stack e-commerce platform with an integrated admin dashboard for product, order, and user management.",
     highlights: [
-      "📱 Natural touch scrolling with smooth inertia effect",
-      "🖱️ Mouse drag and scroll support for desktop", 
-      "🔄 Infinite loop scrolling",
-      "🎨 Unstyled components for complete style customization",
-      "⚡️ Easy installation via shadcn CLI"
+     "🛍️ Customer-facing storefront with product search, cart, and checkout",
+"🛠️ Admin panel for inventory, orders, and user management",
+"💳 Secure authentication and role-based access",
+"📦 REST API integration with scalable backend",
+"🎨 Responsive, modern UI built with React",
+"⚡️ Deployed with Render for free and seamless hosting",
     ],
-    technologies: ["React", "TypeScript", "Monorepo", "Turborepo", "NPM Registry"],
+    technologies: ["React", "TypeScript"," Node.js / Express","MongoDB","REST API","Render (Deployment)"],
     links: {
-      demo: "https://react-wheel-picker.chanhdai.com",
-      github: "https://github.com/ncdai/react-wheel-picker"
+      demo: "https://ecommfree.onrender.com",
+      github: "https://github.com/pranav8625846453/ecommfree.git"
     },
-    awards: ["Vercel's Open Source Program Summer 2025 Cohort"]
+    
+  },
+    {
+    name: "AtHotel", 
+    description: "Hotel booking platform with real-time availability, reservation management, and a modern user experience..",
+    highlights: [
+      "🏨 Browse hotels with detailed listings and image galleries",
+"📅 Real-time booking with check-in / check-out date selection",
+"👤 User authentication and profile-based reservation history",
+"🛠️ Admin support for room management and booking control",
+"🎨 Responsive React frontend for mobile and desktop",
+"⚡️ Seamless deployment on Render",
+    ],
+    technologies: [ "HTML", "CSS", "JavaScript","Node.js / Express","MongoDB","REST API","Render (Deployment)"],
+    links: {
+      demo: "https://athotel.onrender.com",
+      github: "https://github.com/pranav8625846453/ATHOTEL.git"
+    }
   },
   {
-    name: "chanhdai.com",
-    period: "01.2025—Present", 
-    description: "A minimal portfolio, component registry, and blog.",
+    name: "PRANAVATOLE.COM", 
+    description: "A minimal portfolio.",
     highlights: [
       "Clean & modern design",
       "Light & Dark theme support",
@@ -47,27 +61,12 @@ const projects: Project[] = [
       "AI-friendly /llms.txt",
       "Installable PWA"
     ],
-    technologies: ["Next.js 15", "Tailwind CSS v4", "Radix UI", "Motion", "shadcn/ui"],
+    technologies: ["React", "TypeScript","Render (Deployment)"],
     links: {
-      github: "https://github.com/ncdai/chanhdai.com"
+      github: ""
     }
   },
-  {
-    name: "ZaDark",
-    period: "01.2022—Present",
-    description: "ZaDark adds Dark Mode, anti-peeking, customizable fonts, backgrounds, and more to Zalo Web and PC.",
-    highlights: [
-      "80,000+ downloads on SourceForge",
-      "15,000+ active users via Chrome Web Store", 
-      "Earned 10M+ VND in net sales from Safari Extension",
-      "Community Leader badge by SourceForge"
-    ],
-    technologies: ["Browser Extension", "CLI", "Docusaurus 3"],
-    links: {
-      demo: "https://zadark.com"
-    },
-    awards: ["Bronze Medal — 10th Design, Manufacturing, and Application Award 2022"]
-  }
+
 ];
 
 export const ProjectsSection = () => {
@@ -83,11 +82,9 @@ export const ProjectsSection = () => {
                   <div className="mb-4">
                     <div className="flex items-center gap-3 mb-2">
                       <h3 className="text-2xl font-bold">{project.name}</h3>
-                      {project.awards && (
-                        <Award className="h-5 w-5 text-yellow-500" />
-                      )}
+                     
                     </div>
-                    <p className="text-sm text-muted-foreground">{project.period}</p>
+                    
                   </div>
                   
                   <p className="text-lg mb-4">{project.description}</p>
@@ -100,20 +97,6 @@ export const ProjectsSection = () => {
                         </li>
                       ))}
                     </ul>
-                  )}
-
-                  {project.awards && (
-                    <div className="mb-6">
-                      <h4 className="font-semibold mb-2">Awards & Recognition:</h4>
-                      <ul className="space-y-1">
-                        {project.awards.map((award, idx) => (
-                          <li key={idx} className="flex items-center gap-2 text-yellow-600 dark:text-yellow-500">
-                            <Award className="h-4 w-4" />
-                            {award}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
                   )}
                 </div>
                 

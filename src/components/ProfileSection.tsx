@@ -24,18 +24,11 @@ export const ProfileSection = () => {
                 <div>
                   <div className="flex items-center gap-2">
                     <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
-                      Chánh Đại
+                      PRANAV ATOLE
                     </h1>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={playPronunciation}
-                      className="h-8 w-8 text-muted-foreground hover:text-foreground"
-                    >
-                      <Volume2 className="h-4 w-4" />
-                    </Button>
+                   
                   </div>
-                  <p className="text-xl text-muted-foreground">Design Engineer</p>
+                  <p className="text-xl text-muted-foreground">COMPUTER ENGINEER</p>
                 </div>
               </div>
             </div>
@@ -43,44 +36,21 @@ export const ProfileSection = () => {
             <div className="space-y-4">
               <div className="space-y-2">
                 <p className="text-lg">
-                  <span className="font-semibold">Senior Frontend Developer & UI Design Lead @</span>{" "}
-                  <a 
-                    href="https://simplamo.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    Simplamo
-                  </a>
-                </p>
-                <p className="text-lg">
-                  <span className="font-semibold">Founder @</span>{" "}
-                  <a 
-                    href="https://quaric.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:underline"
-                  >
-                    Quaric
-                  </a>
+                  <span className="font-semibold">MERN Stack Developer & DSA IN JAVA</span>{" "}
                 </p>
               </div>
 
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
-                  <span>Thanh My Tay Ward, Ho Chi Minh City, Viet Nam</span>
-                </div>
-                <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <a href="tel:+84777888148" className="hover:text-foreground">
-                    +84 777 888 148
+                  <a href="tel:+91 8625844653" className="hover:text-foreground">
+                    +91 8625844653
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <a href="mailto:dai@chanhdai.com" className="hover:text-foreground">
-                    dai@chanhdai.com
+                  <a href="email:pranavatole@gmail.com" className="hover:text-foreground">
+                    pranavatole@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
@@ -90,10 +60,6 @@ export const ProfileSection = () => {
                   </a>
                 </div>
               </div>
-
-              <Badge variant="secondary" className="w-fit">
-                he/him
-              </Badge>
             </div>
           </div>
 
@@ -102,7 +68,7 @@ export const ProfileSection = () => {
             <div className="relative aspect-square max-w-md mx-auto">
               <img
                 src={profileAvatar}
-                alt="Chánh Đại"
+                alt="pranav atole"
                 className="w-full h-full object-cover rounded-3xl shadow-2xl"
               />
             </div>

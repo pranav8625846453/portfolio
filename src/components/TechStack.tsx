@@ -5,40 +5,26 @@ const techCategories = [
   {
     title: "Languages",
     technologies: [
-      "TypeScript",
-      "JavaScript", 
-      "Python",
-      "PHP",
-      "Java"
+      "Java",
+      "JavaScript",
+      
     ]
   },
   {
     title: "Frontend",
     technologies: [
       "React",
-      "Next.js",
       "Tailwind CSS",
-      "shadcn/ui",
-      "Radix UI",
-      "Motion",
-      "React Router"
-    ]
-  },
-  {
-    title: "State Management",
-    technologies: [
-      "MobX-State-Tree",
-      "Redux",
-      "React Navigation"
+      "React Router",
+      "HTML",
+      "CSS"
     ]
   },
   {
     title: "Backend",
     technologies: [
       "Node.js",
-      "Bun",
-      "LoopBack",
-      "Laravel"
+      "Express.js",
     ]
   },
   {
@@ -46,16 +32,14 @@ const techCategories = [
     technologies: [
       "MySQL",
       "MongoDB", 
-      "Redis"
     ]
   },
   {
     title: "Tools & Others",
     technologies: [
       "Git",
-      "Docker",
-      "Figma",
-      "Adobe Photoshop",
+      "GitHub",
+      "VS Code",
       "ChatGPT"
     ]
   }

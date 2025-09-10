@@ -27,32 +27,12 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: "GitHub",
-    username: "ncdai",
-    url: "https://github.com/ncdai",
+    username: "pranav8625846453",
+    url: "https://github.com/pranav8625846453",
     icon: <Github className="h-5 w-5" />,
     color: "text-gray-800 dark:text-gray-200"
   },
-  {
-    name: "X",
-    username: "@iamncdai",
-    url: "https://x.com/iamncdai",
-    icon: <MessageCircle className="h-5 w-5" />,
-    color: "text-gray-800 dark:text-gray-200"
-  },
-  {
-    name: "daily.dev",
-    username: "@ncdai",
-    url: "https://app.daily.dev/ncdai",
-    icon: <Code className="h-5 w-5" />,
-    color: "text-purple-600"
-  },
-  {
-    name: "YouTube",
-    username: "@ncdai",
-    url: "https://www.youtube.com/@ncdai",
-    icon: <Youtube className="h-5 w-5" />,
-    color: "text-red-600"
-  }
+
 ];
 
 export const SocialLinks = () => {

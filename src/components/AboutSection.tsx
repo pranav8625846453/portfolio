@@ -9,7 +9,7 @@ export const AboutSection = () => {
           <Card className="p-8">
             <div className="prose prose-lg max-w-none dark:prose-invert">
               <p className="text-lg leading-relaxed mb-6">
-                Hello, World! I am <strong>Chánh Đại</strong> — a Design Engineer passionate about creating 
+                Hello, World! I am <strong>PRANAV ATOLE</strong> — a Computer Engineer passionate about creating 
                 high-performance, user-centric software solutions with intuitive and engaging designs.
               </p>
               
