@@ -5,10 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  server: {
-    host: "*",
-    port: 8080,
-  },
+ server: {
+  host: true,   // ✅ makes Vite listen on 0.0.0.0
+  port: 8080,
+  allowedHosts: ["pranavatole-iq9i.onrender.com"], // ✅ your Render domain
+},
   plugins: [
     react(),
     mode === 'development' &&
