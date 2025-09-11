@@ -16,17 +16,12 @@ export const ProfileSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <img
-                  src={profileAvatar}
-                  alt="Profile Avatar"
-                  className="h-20 w-20 rounded-full border-4 border-background shadow-lg"
-                />
                 <div>
                   <div className="flex items-center gap-2">
                     <h1 className="text-4xl font-bold tracking-tight lg:text-5xl">
                       PRANAV ATOLE
                     </h1>
-                   
+
                   </div>
                   <p className="text-xl text-muted-foreground">COMPUTER ENGINEER</p>
                 </div>
@@ -51,12 +46,6 @@ export const ProfileSection = () => {
                   <Mail className="h-4 w-4" />
                   <a href="email:pranavatole@gmail.com" className="hover:text-foreground">
                     pranavatole@gmail.com
-                  </a>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Globe className="h-4 w-4" />
-                  <a href="https://chanhdai.com" className="hover:text-foreground">
-                    chanhdai.com
                   </a>
                 </div>
               </div>

@@ -17,8 +17,9 @@ const Index = () => {
         <SocialLinks />
         <AboutSection />
         <TechStack />
-        {/* <BlogSection /> */}
+        
         <ProjectsSection />
+        <BlogSection />
         {/* <ExperienceSection /> */}
       </main>
       <Footer />

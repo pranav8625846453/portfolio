@@ -20,8 +20,8 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: "LinkedIn",
-    username: "ncdai",
-    url: "https://linkedin.com/in/ncdai",
+    username: "Pranav Atole",
+    url: "https://www.linkedin.com/in/pranav-atole-8625846453/",
     icon: <Linkedin className="h-5 w-5" />,
     color: "text-blue-600"
   },

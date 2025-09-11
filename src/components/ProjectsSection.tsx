@@ -10,6 +10,7 @@ interface Project {
   technologies: string[];
   links: {
     demo?: string;
+    admin?: string;
     github?: string;
   };
 }
@@ -29,6 +30,7 @@ const projects: Project[] = [
     technologies: ["React", "TypeScript"," Node.js / Express","MongoDB","REST API","Render (Deployment)"],
     links: {
       demo: "https://ecommfree.onrender.com",
+      admin: "https://ecommfree-admin.onrender.com",
       github: "https://github.com/pranav8625846453/ecommfree.git"
     },
     
@@ -50,22 +52,22 @@ const projects: Project[] = [
       github: "https://github.com/pranav8625846453/ATHOTEL.git"
     }
   },
-  {
-    name: "PRANAVATOLE.COM", 
-    description: "A minimal portfolio.",
-    highlights: [
-      "Clean & modern design",
-      "Light & Dark theme support",
-      "vCard integration",
-      "SEO optimization with JSON-LD schema",
-      "AI-friendly /llms.txt",
-      "Installable PWA"
-    ],
-    technologies: ["React", "TypeScript","Render (Deployment)"],
-    links: {
-      github: ""
-    }
-  },
+  // {
+  //   name: "PRANAVATOLE.COM", 
+  //   description: "A minimal portfolio.",
+  //   highlights: [
+  //     "Clean & modern design",
+  //     "Light & Dark theme support",
+  //     "vCard integration",
+  //     "SEO optimization with JSON-LD schema",
+  //     "AI-friendly /llms.txt",
+  //     "Installable PWA"
+  //   ],
+  //   technologies: ["React", "TypeScript","Render (Deployment)"],
+  //   links: {
+  //     github: ""
+  //   }
+  // },
 
 ];
 
@@ -123,6 +125,19 @@ export const ProjectsSection = () => {
                         >
                           <ExternalLink className="h-4 w-4" />
                           View Demo
+                        </a>
+                      </Button>
+                    )}
+                     {project.links.admin && (
+                      <Button asChild className="w-full">
+                        <a 
+                          href={project.links.admin} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          View Admin Panel
                         </a>
                       </Button>
                     )}

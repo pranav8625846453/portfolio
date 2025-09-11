@@ -15,7 +15,6 @@ const techCategories = [
     technologies: [
       "React",
       "Tailwind CSS",
-      "React Router",
       "HTML",
       "CSS"
     ]
@@ -49,7 +48,7 @@ export const TechStack = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8">Tech Stack</h2>
+        <h2 className="text-3xl font-bold mb-8">Skills</h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {techCategories.map((category) => (
             <Card key={category.title} className="p-6">

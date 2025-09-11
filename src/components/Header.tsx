@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Sun, Moon, Github, Command } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Sun, Moon, Command } from "lucide-react";
+import { useTheme } from "@/providers/ThemeProvider";
 import { useEffect, useState } from "react";
 
 export const Header = () => {
@@ -39,14 +39,9 @@ export const Header = () => {
               href="#blog" 
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Blog
+             Achievment
             </a>
-            <a 
-              href="#components" 
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Components
-            </a>
+           
             
             <div className="flex items-center space-x-2">
               <Button
