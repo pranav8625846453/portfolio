@@ -32,6 +32,13 @@ const socialLinks: SocialLink[] = [
     icon: <Github className="h-5 w-5" />,
     color: "text-gray-800 dark:text-gray-200"
   },
+  {
+    name: "LeetCode",
+    username: "Pranav_Atole",
+    url: "https://leetcode.com/u/Pranav_Atole/",
+    icon: <Code className="h-5 w-5" />,
+    color: "text-gray-800 dark:text-gray-200"
+  },
 
 ];
 
